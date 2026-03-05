@@ -49,9 +49,11 @@ Images are stored in `images/` and were pulled from [caroghana.org](https://caro
 - `testimonial-person.jpg` – Testimonial avatar (Roseline Dery)
 - `testimonial-bg.jpg` – Testimonials section background
 
-**HD images (Unsplash, free):** Run `./scripts/download-hd-images.sh` to fetch hero and cause images at 1920px/1200px. Or `./scripts/download-hero-image.sh` for hero only.
+**Hero (HD):** Run `./scripts/download-hd-images.sh` for a high-res hero from Unsplash.
 
-**Partner logos:** Run `./scripts/download-partner-images.sh` to fetch from caroghana.org. Site references `images/partner-sdg.jpeg`, `images/partner-coniwas.png`, `images/partner-8471809.jpeg`.
+**Cause/project images:** Real photos from caroghana.org. Run `./scripts/download-cause-images.sh` to restore if needed.
+
+**Partner logos:** Run `./scripts/download-partner-images.sh` to fetch from caroghana.org.
 
 ## Customize
 
