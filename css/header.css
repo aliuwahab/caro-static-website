@@ -3,9 +3,15 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250, 249, 246, 0.92);
-  backdrop-filter: blur(12px);
+  background: rgba(248, 247, 244, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--color-border);
+  transition: box-shadow 0.3s var(--ease-out);
+}
+
+.site-header.scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
 }
 
 .site-header .container {
@@ -61,10 +67,34 @@
 .nav-list a {
   font-weight: 500;
   color: var(--color-text);
+  position: relative;
+  transition: color 0.25s var(--ease-out);
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s var(--ease-out);
+}
+
+.nav-list a:hover::after,
+.nav-list a[aria-current="page"]::after {
+  width: 100%;
 }
 
 .nav-list a:hover {
   color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .nav-list a::after {
+    display: none;
+  }
 }
 
 .nav-list a[aria-current="page"] {

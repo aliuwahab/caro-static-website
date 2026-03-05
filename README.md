@@ -16,8 +16,9 @@ Content is pulled from [caroghana.org](https://caroghana.org/) and structured in
 ## Design
 
 - **Typography:** Outfit (headings), Source Sans 3 (body)
-- **Colors:** Primary green (#0d5c2e), accent amber (#c17f2c), warm off-white background
+- **Colors:** Primary green (#0a4d2e), accent amber (#b87333), warm off-white background
 - **Layout:** Responsive, mobile-first, sticky header, clear sections
+- **Transitions:** Scroll-triggered fade-ins, card hover lift, button hover scale, nav underline
 - **Accessibility:** Skip link, focus styles, semantic HTML, ARIA where needed
 
 ## Run locally
@@ -48,13 +49,9 @@ Images are stored in `images/` and were pulled from [caroghana.org](https://caro
 - `testimonial-person.jpg` – Testimonial avatar (Roseline Dery)
 - `testimonial-bg.jpg` – Testimonials section background
 
-Partner logos (SDG, CONIWAS, etc.) can be downloaded by running:
+**HD images (Unsplash, free):** Run `./scripts/download-hd-images.sh` to fetch hero and cause images at 1920px/1200px. Or `./scripts/download-hero-image.sh` for hero only.
 
-```bash
-./scripts/download-partner-images.sh
-```
-
-If any download fails (e.g. network restrictions), run the script from your machine where caroghana.org is reachable; the site already references `images/partner-sdg.jpeg`, `images/partner-coniwas.png`, and `images/partner-8471809.jpeg`.
+**Partner logos:** Run `./scripts/download-partner-images.sh` to fetch from caroghana.org. Site references `images/partner-sdg.jpeg`, `images/partner-coniwas.png`, `images/partner-8471809.jpeg`.
 
 ## Customize
 
