@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About CaroGhana – Vision, mission, aims, areas of operation and core values." />
+  <title>About us – CaroGhana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <style>
+    .page-hero { padding-block: var(--space-3xl); text-align: center; }
+    .page-hero h1 { font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 700; margin: 0 0 var(--space-md); }
+    .page-hero p { font-size: 1.125rem; color: var(--color-text-muted); max-width: 50ch; margin: 0 auto; }
+    .about-block { margin-bottom: var(--space-3xl); }
+    .about-block h2 { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 600; margin: 0 0 var(--space-md); color: var(--color-primary); }
+    .about-block p, .about-block ul { margin: 0 0 var(--space-md); color: var(--color-text-muted); line-height: 1.7; }
+    .about-block ul { padding-left: 1.25rem; }
+    .about-block li { margin-bottom: var(--space-sm); }
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-lg); margin-top: var(--space-lg); }
+    .value-card { padding: var(--space-lg); background: var(--color-surface); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .value-card h3 { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; margin: 0 0 var(--space-sm); color: var(--color-text); }
+    .value-card p { margin: 0; font-size: 0.9375rem; color: var(--color-text-muted); }
+    .areas-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-sm); }
+    .areas-list li { padding: var(--space-md); background: var(--color-bg-alt); border-radius: var(--radius-sm); font-weight: 500; }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="images/logo.jpg" alt="CaroGhana" /></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About us</a></li>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero section--alt">
+      <div class="container container--narrow">
+        <h1>About us</h1>
+        <p>The Centre for Advancing Rural Opportunity (CARO) is a youth-led community development organization dedicated to empowering communities and promoting the well-being of society for a resilient and sustainable community development.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="about-block">
+          <h2>Vision</h2>
+          <p>To see a society of peace and dignity, where everyone, everywhere has equal access to resources and opportunities for development.</p>
+        </div>
+
+        <div class="about-block">
+          <h2>Mission</h2>
+          <p>Working in partnership to empower communities, and to promote the well-being of people in society for a resilient and sustainable community development.</p>
+        </div>
+
+        <div class="about-block">
+          <h2>Aims and objectives</h2>
+          <ul>
+            <li>To advocate for access to quality health care and WASH services in rural communities.</li>
+            <li>To give a voice to and promote the rights of women, children and marginalized groups in society.</li>
+            <li>To advocate in collaboration with other development partners for poverty alleviation in poor communities.</li>
+            <li>To empower women and promote youth development for sustainable livelihoods.</li>
+            <li>To promote democracy and foster social accountability for inclusive governance.</li>
+            <li>To promote peace, security and integration for social cohesion in society.</li>
+          </ul>
+        </div>
+
+        <div class="about-block">
+          <h2>Areas of operation</h2>
+          <ol class="areas-list">
+            <li>Health and Nutrition</li>
+            <li>Water, Sanitation and Hygiene (WASH)</li>
+            <li>Human Rights Advocacy (Gender inclusion, PWDs, Gender-Based Violence (GBV))</li>
+            <li>Youth Development and Entrepreneurship</li>
+            <li>Peace and Security and Social Integration</li>
+            <li>Social Accountability and Good Governance</li>
+            <li>Empowerment and Micro enterprising (Women Empowerment)</li>
+          </ol>
+        </div>
+
+        <div class="about-block">
+          <h2>Core values</h2>
+          <div class="values-grid">
+            <div class="value-card">
+              <h3>Trust</h3>
+              <p>We will ensure and build common trust between us and our constituents as well as with our partners.</p>
+            </div>
+            <div class="value-card">
+              <h3>Mutual respect</h3>
+              <p>To engender cordiality in the work we do, we shall respect each other's views with the understanding that it is only when we disagree that best alternative decisions will be made to bring about progress. We shall allow all to have a say.</p>
+            </div>
+            <div class="value-card">
+              <h3>Equity and justice</h3>
+              <p>To work to ensure equal opportunities to all and sundry, irrespective of race, age, gender, social status, economic status, HIV status, religion, ethnicity, disability etc.</p>
+            </div>
+            <div class="value-card">
+              <h3>Transparency and accountability</h3>
+              <p>We will at all times, without any compromise ensure that transparency and accountability override all our transactions amongst ourselves and the people we work with.</p>
+            </div>
+            <div class="value-card">
+              <h3>Gender and social inclusion</h3>
+              <p>In all our dealings we will take into consideration the role of both men and women in a way that gives them equal opportunities. We will design and implement programmes and activities that improve the economic and social capacities of women and children with the aim of reaching gender parity.</p>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top: var(--space-2xl);">
+          <a href="contact.html" class="btn btn--primary">Contact us</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="images/logo.jpg" alt="CaroGhana" /></a>
+          <p>The Centre for Advancing Rural Opportunity — empowering communities for a resilient and sustainable future.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 CaroGhana. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('[data-nav-toggle]');
+      var nav = document.getElementById('nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>

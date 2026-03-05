@@ -1,0 +1,47 @@
+/* Publication / article detail pages */
+.pub-article .pub-header {
+  padding-block: var(--space-2xl) var(--space-xl);
+}
+
+.pub-article .pub-meta {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.pub-article .pub-meta span + span::before {
+  content: " · ";
+}
+
+.pub-article h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  margin: 0 0 var(--space-lg);
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.pub-article .pub-body {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.pub-article .pub-body p {
+  margin: 0 0 var(--space-lg);
+}
+
+.pub-article .pub-body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.pub-article .pub-body a:hover {
+  color: var(--color-primary-dark);
+}
+
+.pub-article .pub-back {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}

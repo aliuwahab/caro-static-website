@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hand hygiene crucial in preventing diarrhoea and respiratory illnesses – CaroGhana." />
+  <title>Hand hygiene crucial in preventing diarrhoea and respiratory illnesses – CaroGhana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/publication.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../causes.html">Causes</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="pub-article section section--alt">
+      <div class="container container--narrow">
+        <header class="pub-header">
+          <p class="pub-meta"><span>Apr 7, 2024</span><span>Admin</span><span>Projects</span></p>
+          <h1>Hand hygiene crucial in preventing diarrhoea and respiratory illnesses</h1>
+        </header>
+        <div class="pub-body">
+          <p>Simple handwashing with soap at key times—before eating, after using the toilet, and after handling waste or animals—is one of the most effective ways to prevent diarrhoea and respiratory infections. In many rural communities, access to water and soap and the habit of handwashing are still limited, which increases the risk of illness, especially among children.</p>
+          <p>CaroGhana’s WASH programmes focus on hand hygiene promotion alongside Community-Led Total Sanitation (CLTS). We work in communities, schools and health facilities to encourage behaviour change through demonstrations, group sessions and support for handwashing facilities. When families and institutions adopt regular handwashing, the impact on health can be significant.</p>
+          <p>We continue to advocate for stronger WASH systems and universal hand hygiene so that everyone, everywhere can protect their health with this simple, life-saving practice.</p>
+        </div>
+        <div class="pub-back">
+          <a href="../publications.html" class="btn btn--outline">← All publications</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+          <p>The Centre for Advancing Rural Opportunity — empowering communities for a resilient and sustainable future.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About us</a></li>
+            <li><a href="../causes.html">Causes</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 CaroGhana. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('[data-nav-toggle]');
+      var nav = document.getElementById('nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>

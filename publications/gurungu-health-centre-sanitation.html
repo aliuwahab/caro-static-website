@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gurungu Health Centre receives improved sanitation management facility – CaroGhana." />
+  <title>Gurungu Health Centre receives improved sanitation management facility – CaroGhana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/publication.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../causes.html">Causes</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="pub-article section section--alt">
+      <div class="container container--narrow">
+        <header class="pub-header">
+          <p class="pub-meta"><span>Admin</span><span>Projects</span></p>
+          <h1>Gurungu Health Centre receives improved sanitation management facility</h1>
+        </header>
+        <div class="pub-body">
+          <p>As part of our Ghana WASH Activity and commitment to improving Water, Sanitation and Hygiene in health facilities, CaroGhana has supported Gurungu Health Centre with an improved sanitation management facility. Health centres serve large catchments and need adequate, safe sanitation to protect staff and patients and to set an example for the community.</p>
+          <p>The new facility supports better waste management and hygiene practices at the centre. It also allows staff to demonstrate and promote handwashing and safe sanitation to patients and visitors, reinforcing the messages we deliver in communities and schools.</p>
+          <p>We work with partners and local authorities to identify facilities where WASH improvements can have the greatest impact. Gurungu Health Centre is one of several facilities we have supported; we continue to advocate for more investment in WASH in health settings across our areas of operation.</p>
+        </div>
+        <div class="pub-back">
+          <a href="../publications.html" class="btn btn--outline">← All publications</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+          <p>The Centre for Advancing Rural Opportunity — empowering communities for a resilient and sustainable future.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About us</a></li>
+            <li><a href="../causes.html">Causes</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 CaroGhana. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('[data-nav-toggle]');
+      var nav = document.getElementById('nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>

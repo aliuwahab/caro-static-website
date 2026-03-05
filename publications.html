@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CaroGhana publications and articles – Updates on our projects and impact." />
+  <title>Publications – CaroGhana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <style>
+    .page-hero { padding-block: var(--space-3xl); text-align: center; }
+    .page-hero h1 { font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 700; margin: 0 0 var(--space-md); }
+    .page-hero p { font-size: 1.125rem; color: var(--color-text-muted); max-width: 50ch; margin: 0 auto; }
+    .pub-list { list-style: none; padding: 0; margin: 0; }
+    .pub-item { padding: var(--space-xl) 0; border-bottom: 1px solid var(--color-border); }
+    .pub-item:last-child { border-bottom: none; }
+    .pub-item a { display: block; color: inherit; }
+    .pub-item a:hover .pub-title { color: var(--color-primary); }
+    .pub-meta { font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: var(--space-sm); }
+    .pub-title { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; margin: 0; transition: color var(--transition-fast); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="images/logo.jpg" alt="CaroGhana" /></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="publications.html" aria-current="page">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero section--alt">
+      <div class="container container--narrow">
+        <h1>Our publications</h1>
+        <p>We publish articles to keep everyone informed of our projects and impact.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <ul class="pub-list">
+          <li class="pub-item">
+            <a href="publications/hand-hygiene-preventing-illnesses.html">
+              <p class="pub-meta">Apr 7, 2024 · Admin · Projects</p>
+              <h2 class="pub-title">Hand hygiene crucial in preventing diarrhoea and respiratory illnesses</h2>
+            </a>
+          </li>
+          <li class="pub-item">
+            <a href="publications/gurungu-health-centre-sanitation.html">
+              <p class="pub-meta">Admin · Projects</p>
+              <h2 class="pub-title">Gurungu Health Centre receives improved sanitation management facility</h2>
+            </a>
+          </li>
+          <li class="pub-item">
+            <a href="publications/wash-systems-universal-hand-hygiene.html">
+              <p class="pub-meta">Admin · Projects</p>
+              <h2 class="pub-title">Invest more in WASH systems to facilitate universal hand hygiene — CARO Ghana to Government</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="images/logo.jpg" alt="CaroGhana" /></a>
+          <p>The Centre for Advancing Rural Opportunity — empowering communities for a resilient and sustainable future.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 CaroGhana. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('[data-nav-toggle]');
+      var nav = document.getElementById('nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>

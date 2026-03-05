@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Enhancing communities – CaroGhana programme on youth, PVE awareness and social cohesion." />
+  <title>Enhancing communities – CaroGhana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/cards.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/project.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../causes.html">Causes</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="project-hero section--alt">
+      <div class="container">
+        <div class="project-hero-image">
+          <img src="../images/cause-community.jpg" alt="Community engagement" />
+        </div>
+        <div class="project-hero-content">
+          <p class="project-meta">Ongoing programme</p>
+          <h1>Enhancing communities</h1>
+          <p class="project-lead">We enhance youth knowledge and comprehension of Potential Violent Extremism (PVE), fostering improved communication and positive interaction among youth themselves, as well as between youth and communities. This programme builds social cohesion and equips young people with the skills and awareness to contribute to peaceful, resilient communities.</p>
+        </div>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="project-block">
+          <h2>Objectives</h2>
+          <ul>
+            <li>Increase youth awareness and understanding of factors that can lead to violent extremism.</li>
+            <li>Improve communication and positive interaction among young people.</li>
+            <li>Strengthen dialogue and trust between youth and community leaders.</li>
+            <li>Build resilience and social cohesion in target communities.</li>
+          </ul>
+        </div>
+
+        <div class="project-block">
+          <h2>Our approach</h2>
+          <p>We work with youth groups, schools and community leaders to deliver workshops, dialogues and awareness sessions. Activities are designed with and for young people so they are relevant and owned by the community. We focus on dialogue, critical thinking and positive alternatives to build lasting cohesion.</p>
+        </div>
+
+        <div class="project-block">
+          <h2>Impact</h2>
+          <p>Through this programme we support safer, more inclusive environments where youth can participate meaningfully and contribute to peace and development in their communities.</p>
+        </div>
+
+        <div class="project-cta">
+          <a href="../contact.html" class="btn btn--primary">Get involved or partner with us</a>
+          <a href="../causes.html" class="btn btn--outline" style="margin-left: var(--space-md);">View all causes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+          <p>The Centre for Advancing Rural Opportunity — empowering communities for a resilient and sustainable future.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About us</a></li>
+            <li><a href="../causes.html">Causes</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 CaroGhana. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('[data-nav-toggle]');
+      var nav = document.getElementById('nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>

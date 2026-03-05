@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ghana WASH Activity – Community-Led Total Sanitation and hand hygiene promotion by CaroGhana." />
+  <title>Ghana WASH Activity – CaroGhana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/cards.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/project.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../causes.html">Causes</a></li>
+          <li><a href="../publications.html">Publications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="project-hero section--alt">
+      <div class="container">
+        <div class="project-hero-image">
+          <img src="../images/cause-wash.jpg" alt="WASH activity in community" />
+        </div>
+        <div class="project-hero-content">
+          <p class="project-meta">Ongoing programme</p>
+          <h1>Ghana WASH Activity</h1>
+          <p class="project-lead">We implement comprehensive Community-Led Total Sanitation (CLTS) initiatives, integrating them with targeted hand hygiene promotion programs across diverse settings such as communities, schools, and health facilities. Our WASH work supports better health outcomes and dignity for everyone.</p>
+        </div>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="project-block">
+          <h2>What we do</h2>
+          <ul>
+            <li>Community-Led Total Sanitation (CLTS) to help communities achieve open-defecation-free status.</li>
+            <li>Hand hygiene promotion in communities, schools and health facilities.</li>
+            <li>Social and behaviour change communication (SBCC) for WASH.</li>
+            <li>Support for improved sanitation facilities and management where needed.</li>
+          </ul>
+        </div>
+
+        <div class="project-block">
+          <h2>Where we work</h2>
+          <p>We deliver WASH activities in rural and underserved communities, schools and health facilities across our areas of operation. Programmes are designed with local stakeholders and aligned with national WASH priorities.</p>
+        </div>
+
+        <div class="project-block">
+          <h2>Impact</h2>
+          <p>Better sanitation and hand hygiene reduce diarrhoea and respiratory illnesses, improve dignity and support overall community health. We publish updates on our WASH work in our <a href="../publications.html">publications</a>.</p>
+        </div>
+
+        <div class="project-cta">
+          <a href="../contact.html" class="btn btn--primary">Get involved or partner with us</a>
+          <a href="../causes.html" class="btn btn--outline" style="margin-left: var(--space-md);">View all causes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="CaroGhana" /></a>
+          <p>The Centre for Advancing Rural Opportunity — empowering communities for a resilient and sustainable future.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About us</a></li>
+            <li><a href="../causes.html">Causes</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 CaroGhana. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('[data-nav-toggle]');
+      var nav = document.getElementById('nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>
